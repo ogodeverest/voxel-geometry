@@ -1,13 +1,17 @@
 {
   "name": "voxel-geometry",
   "private": true,
+  "homepage": "https://ogodeverest.github.io/voxel-geometry",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "vite": "^2.9.9"
   },
   "dependencies": {
