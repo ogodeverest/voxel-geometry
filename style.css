@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#ui {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+}
+#ui input[type="radio"] {
+  width: 0;
+  height: 0;
+  display: none;
+}
+#ui input[type="radio"] + label {
+  background-image: url("https://threejsfundamentals.org/threejs/resources/images/minecraft/flourish-cc-by-nc-sa.png");
+  background-size: 1600% 400%;
+  image-rendering: pixelated;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+#ui input[type="radio"]:checked + label {
+  outline: 3px solid red;
+}
+
+@media (max-width: 600px), (max-height: 600px) {
+  #ui input[type="radio"] + label {
+    height: 32px;
+    width: 32px;
+  }
+}
