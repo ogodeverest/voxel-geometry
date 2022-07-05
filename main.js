@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import BlocksTexture from "./assets/blocks.png";
 import "./style.css";
 
 class VoxelWorld {
@@ -292,7 +293,7 @@ function main() {
   addLight(1, -1, -2);
 
   const loader = new THREE.TextureLoader();
-  const texture = loader.load("./assets/blocks.png", render);
+  const texture = loader.load(BlocksTexture, render);
   texture.magFilter = THREE.NearestFilter;
   texture.minFilter = THREE.NearestFilter;
 
