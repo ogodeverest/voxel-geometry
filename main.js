@@ -292,10 +292,7 @@ function main() {
   addLight(1, -1, -2);
 
   const loader = new THREE.TextureLoader();
-  const texture = loader.load(
-    "https://threejsfundamentals.org/threejs/resources/images/minecraft/flourish-cc-by-nc-sa.png",
-    render
-  );
+  const texture = loader.load("./assets/blocks.png", render);
   texture.magFilter = THREE.NearestFilter;
   texture.minFilter = THREE.NearestFilter;
 

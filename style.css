@@ -24,7 +24,7 @@ canvas {
   display: none;
 }
 #ui input[type="radio"] + label {
-  background-image: url("https://threejsfundamentals.org/threejs/resources/images/minecraft/flourish-cc-by-nc-sa.png");
+  background-image: url("./assets/blocks.png");
   background-size: 1600% 400%;
   image-rendering: pixelated;
   width: 64px;
